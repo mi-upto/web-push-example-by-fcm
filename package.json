@@ -1,0 +1,44 @@
+{
+  "name": "web-push-example-by-fcm",
+  "version": "0.0.0",
+  "description": "Web Push Example by FCM (Firebase Cloud Messaging)",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint server.js src/main.js public/firebase-messaging-sw.js && stylelint public/app.css",
+    "build": "npm run lint && webpack",
+    "start": "npm run build && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Korilakkuma/web-push-example-by-fcm.git"
+  },
+  "keywords": [
+    "Web Push API",
+    "Web Notifications API",
+    "Service Worker",
+    "Firebase Cloud Messaging",
+    "FCM"
+  ],
+  "author": "Korilakkuma <rilakkuma.san.xjapan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Korilakkuma/web-push-example-by-fcm/issues"
+  },
+  "homepage": "https://github.com/Korilakkuma/web-push-example-by-fcm#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "firebase": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.4.0",
+    "eslint-cli": "^1.1.1",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0",
+    "webpack": "^3.0.0"
+  }
+}
